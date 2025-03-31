@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.display {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: right;
+    color: white;
+}
+
+.previous-operand {
+    min-height: 20px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.current-operand {
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #666;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+button:active {
+    background-color: #555;
+}
+
+button[data-action="operation"] {
+    background-color: #ff9500;
+}
+
+button[data-action="operation"]:hover {
+    background-color: #ffaa33;
+}
+
+button[data-action="operation"]:active {
+    background-color: #cc7700;
+}
+
+button[data-action="clear"],
+button[data-action="delete"] {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+button[data-action="clear"]:hover,
+button[data-action="delete"]:hover {
+    background-color: #bbbbbb;
+}
+
+button[data-action="clear"]:active,
+button[data-action="delete"]:active {
+    background-color: #888888;
+}
+
+.span-two {
+    width: 130px;
+}
